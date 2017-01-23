@@ -1,0 +1,866 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Custom
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Tube Screamer Clone TS-808"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L JackMono J1
+U 1 1 581A778D
+P 800 3000
+F 0 "J1" H 800 3150 60  0000 C CNN
+F 1 "JackMono" H 700 2750 60  0000 C CNN
+F 2 "CustomFootprints:MonoJackRemote" H 800 3000 60  0001 C CNN
+F 3 "" H 800 3000 60  0001 C CNN
+	1    800  3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L JackMono J3
+U 1 1 581A7961
+P 10900 3700
+F 0 "J3" H 10900 3850 60  0000 C CNN
+F 1 "JackMono" H 10800 3450 60  0000 C CNN
+F 2 "CustomFootprints:MonoJackRemote" H 10900 3700 60  0001 C CNN
+F 3 "" H 10900 3700 60  0001 C CNN
+	1    10900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L JackMono J2
+U 1 1 581A79E2
+P 1450 4950
+F 0 "J2" H 1450 5100 60  0000 C CNN
+F 1 "JackMono" H 1350 4700 60  0000 C CNN
+F 2 "CustomFootprints:MonoJackRemote" H 1450 4950 60  0001 C CNN
+F 3 "" H 1450 4950 60  0001 C CNN
+	1    1450 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 581A7B38
+P 2300 5350
+F 0 "D1" H 2300 5450 50  0000 C CNN
+F 1 "1N4003" H 2300 5250 50  0000 C CNN
+F 2 "CustomFootprints:diode3" H 2300 5350 50  0001 C CNN
+F 3 "" H 2300 5350 50  0000 C CNN
+	1    2300 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 581A7C7E
+P 2600 5350
+F 0 "C2" H 2625 5450 50  0000 L CNN
+F 1 "100uF" H 2625 5250 50  0000 L CNN
+F 2 "CustomFootprints:C_Radial_D5_L6_P2.5" H 2638 5200 50  0001 C CNN
+F 3 "" H 2600 5350 50  0000 C CNN
+	1    2600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 581A7D8B
+P 3000 5100
+F 0 "R4" V 3080 5100 50  0000 C CNN
+F 1 "10k" V 3000 5100 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 2930 5100 50  0001 C CNN
+F 3 "" H 3000 5100 50  0000 C CNN
+	1    3000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 581A7DCA
+P 3000 5650
+F 0 "R5" V 3080 5650 50  0000 C CNN
+F 1 "10k" V 3000 5650 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 2930 5650 50  0001 C CNN
+F 3 "" H 3000 5650 50  0000 C CNN
+	1    3000 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C4
+U 1 1 581A7DF7
+P 3350 5600
+F 0 "C4" H 3375 5700 50  0000 L CNN
+F 1 "47uF" H 3375 5500 50  0000 L CNN
+F 2 "CustomFootprints:C_Radial_D5_L6_P2.5" H 3388 5450 50  0001 C CNN
+F 3 "" H 3350 5600 50  0000 C CNN
+	1    3350 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR01
+U 1 1 581A82DD
+P 1850 6000
+F 0 "#PWR01" H 1850 5750 50  0001 C CNN
+F 1 "GNDREF" H 1850 5850 50  0000 C CNN
+F 2 "" H 1850 6000 50  0000 C CNN
+F 3 "" H 1850 6000 50  0000 C CNN
+	1    1850 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 581A8437
+P 1550 2900
+F 0 "C1" V 1600 2950 50  0000 L CNN
+F 1 ".027uF" V 1400 2800 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 1588 2750 50  0001 C CNN
+F 3 "" H 1550 2900 50  0000 C CNN
+	1    1550 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 581A85FA
+P 2000 2900
+F 0 "R1" V 2080 2900 50  0000 C CNN
+F 1 "1k" V 2000 2900 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 1930 2900 50  0001 C CNN
+F 3 "" H 2000 2900 50  0000 C CNN
+	1    2000 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 581A869B
+P 2250 3350
+F 0 "R2" H 2350 3350 50  0000 C CNN
+F 1 "510k" V 2250 3350 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 2180 3350 50  0001 C CNN
+F 3 "" H 2250 3350 50  0000 C CNN
+	1    2250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_ECB Q1
+U 1 1 581A886B
+P 2550 2900
+F 0 "Q1" H 2850 2950 50  0000 R CNN
+F 1 "KSC1518" H 2550 3050 50  0000 R CNN
+F 2 "CustomFootprints:TO-92_Inline_Wide_Oval" H 2750 3000 50  0001 C CNN
+F 3 "" H 2550 2900 50  0000 C CNN
+	1    2550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 581A8A00
+P 2650 3350
+F 0 "R3" H 2750 3350 50  0000 C CNN
+F 1 "10k" V 2650 3350 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 2580 3350 50  0001 C CNN
+F 3 "" H 2650 3350 50  0000 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR02
+U 1 1 581A8C22
+P 2650 2500
+F 0 "#PWR02" H 2650 2350 50  0001 C CNN
+F 1 "+9V" H 2650 2640 50  0000 C CNN
+F 2 "" H 2650 2500 50  0000 C CNN
+F 3 "" H 2650 2500 50  0000 C CNN
+	1    2650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR03
+U 1 1 581A8C7B
+P 2650 3700
+F 0 "#PWR03" H 2650 3450 50  0001 C CNN
+F 1 "GNDREF" H 2650 3550 50  0000 C CNN
+F 2 "" H 2650 3700 50  0000 C CNN
+F 3 "" H 2650 3700 50  0000 C CNN
+	1    2650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR04
+U 1 1 581A8CE2
+P 1350 3700
+F 0 "#PWR04" H 1350 3450 50  0001 C CNN
+F 1 "GNDREF" H 1350 3550 50  0000 C CNN
+F 2 "" H 1350 3700 50  0000 C CNN
+F 3 "" H 1350 3700 50  0000 C CNN
+	1    1350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 581A8F1F
+P 2950 3150
+F 0 "C3" V 3000 3200 50  0000 L CNN
+F 1 "1uF" V 2800 3050 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 2988 3000 50  0001 C CNN
+F 3 "" H 2950 3150 50  0000 C CNN
+	1    2950 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 581A9073
+P 3250 3350
+F 0 "R6" H 3350 3350 50  0000 C CNN
+F 1 "10k" V 3250 3350 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 3180 3350 50  0001 C CNN
+F 3 "" H 3250 3350 50  0000 C CNN
+	1    3250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L JNR4558 U1
+U 2 1 581A9296
+P 4250 3000
+F 0 "U1" H 4450 3250 60  0000 C CNN
+F 1 "JNR4558" H 4600 2800 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 4100 2900 60  0001 C CNN
+F 3 "" H 4100 2900 60  0001 C CNN
+	2    4250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D3
+U 1 1 581A955C
+P 4400 2450
+F 0 "D3" H 4400 2550 50  0000 C CNN
+F 1 "1N914" H 4400 2350 50  0000 C CNN
+F 2 "CustomFootprints:diode3" H 4400 2450 50  0001 C CNN
+F 3 "" H 4400 2450 50  0000 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 581A97CC
+P 4400 2150
+F 0 "D2" H 4400 2050 50  0000 C CNN
+F 1 "1N914" H 4400 2250 50  0000 C CNN
+F 2 "CustomFootprints:diode3" H 4400 2150 50  0001 C CNN
+F 3 "" H 4400 2150 50  0000 C CNN
+	1    4400 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 581A995A
+P 4400 1900
+F 0 "C6" V 4450 1950 50  0000 L CNN
+F 1 "51pF" V 4250 1800 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 4438 1750 50  0001 C CNN
+F 3 "" H 4400 1900 50  0000 C CNN
+	1    4400 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 581A9A4F
+P 4000 1650
+F 0 "R8" H 4100 1650 50  0000 C CNN
+F 1 "51k" V 4000 1650 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 3930 1650 50  0001 C CNN
+F 3 "" H 4000 1650 50  0000 C CNN
+	1    4000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 581A9C0F
+P 3700 1900
+F 0 "C5" V 3600 1750 50  0000 L CNN
+F 1 ".047uF" V 3850 1850 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 3738 1750 50  0001 C CNN
+F 3 "" H 3700 1900 50  0000 C CNN
+	1    3700 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 581A9D82
+P 3450 2200
+F 0 "R7" H 3550 2200 50  0000 C CNN
+F 1 "4.7k" V 3450 2200 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 3380 2200 50  0001 C CNN
+F 3 "" H 3450 2200 50  0000 C CNN
+	1    3450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 581A9FBF
+P 4300 1450
+F 0 "RV1" H 4300 1370 50  0000 C CNN
+F 1 "500k" H 4300 1450 50  0000 C CNN
+F 2 "CustomFootprints:Potentiometer_WirePads_Small_Oval" H 4300 1450 50  0001 C CNN
+F 3 "" H 4300 1450 50  0000 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 581AA862
+P 5150 3000
+F 0 "R9" V 5230 3000 50  0000 C CNN
+F 1 "1k" V 5150 3000 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 5080 3000 50  0001 C CNN
+F 3 "" H 5150 3000 50  0000 C CNN
+	1    5150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 581AAAF8
+P 5650 3300
+F 0 "R10" H 5750 3450 50  0000 C CNN
+F 1 "10k" V 5650 3300 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 5580 3300 50  0001 C CNN
+F 3 "" H 5650 3300 50  0000 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV2
+U 1 1 581AADB3
+P 6100 3600
+F 0 "RV2" H 6100 3520 50  0000 C CNN
+F 1 "20k" H 6100 3600 50  0000 C CNN
+F 2 "CustomFootprints:Potentiometer_WirePads_Small_Oval" H 6100 3600 50  0001 C CNN
+F 3 "" H 6100 3600 50  0000 C CNN
+	1    6100 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R11
+U 1 1 581AAFEC
+P 6100 4450
+F 0 "R11" H 6250 4450 50  0000 C CNN
+F 1 "220" V 6100 4450 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 6030 4450 50  0001 C CNN
+F 3 "" H 6100 4450 50  0000 C CNN
+	1    6100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR05
+U 1 1 581AB113
+P 6100 4850
+F 0 "#PWR05" H 6100 4600 50  0001 C CNN
+F 1 "GNDREF" H 6100 4700 50  0000 C CNN
+F 2 "" H 6100 4850 50  0000 C CNN
+F 3 "" H 6100 4850 50  0000 C CNN
+	1    6100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L JNR4558 U1
+U 1 1 581AB4FF
+P 6900 3150
+F 0 "U1" H 6850 3150 60  0000 C CNN
+F 1 "JNR4558" H 6400 3150 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 6750 3050 60  0001 C CNN
+F 3 "" H 6750 3050 60  0001 C CNN
+	1    6900 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L GNDREF #PWR06
+U 1 1 581AB82F
+P 5450 4050
+F 0 "#PWR06" H 5450 3800 50  0001 C CNN
+F 1 "GNDREF" H 5450 3900 50  0000 C CNN
+F 2 "" H 5450 4050 50  0000 C CNN
+F 3 "" H 5450 4050 50  0000 C CNN
+	1    5450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 581AC22B
+P 6650 3600
+F 0 "R12" V 6730 3600 50  0000 C CNN
+F 1 "1k" V 6650 3600 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 6580 3600 50  0001 C CNN
+F 3 "" H 6650 3600 50  0000 C CNN
+	1    6650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C7
+U 1 1 581ACFB0
+P 5450 3400
+F 0 "C7" H 5475 3500 50  0000 L CNN
+F 1 ".22uf Tant" V 5300 3150 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 5488 3250 50  0001 C CNN
+F 3 "" H 5450 3400 50  0000 C CNN
+	1    5450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C8
+U 1 1 581AD3FA
+P 6100 4050
+F 0 "C8" H 6125 4150 50  0000 L CNN
+F 1 ".22uf Tant" H 6125 3950 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 6138 3900 50  0001 C CNN
+F 3 "" H 6100 4050 50  0000 C CNN
+	1    6100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 581AD9D8
+P 7700 3150
+F 0 "C9" V 7750 3200 50  0000 L CNN
+F 1 "1uF" V 7550 3050 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 7738 3000 50  0001 C CNN
+F 3 "" H 7700 3150 50  0000 C CNN
+	1    7700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 581ADE1B
+P 8100 3150
+F 0 "R13" V 8180 3150 50  0000 C CNN
+F 1 "1k" V 8100 3150 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 8030 3150 50  0001 C CNN
+F 3 "" H 8100 3150 50  0000 C CNN
+	1    8100 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV3
+U 1 1 581ADF79
+P 8300 3350
+F 0 "RV3" H 8300 3270 50  0000 C CNN
+F 1 "100k" H 8300 3350 50  0000 C CNN
+F 2 "CustomFootprints:Potentiometer_WirePads_Small_Oval" H 8300 3350 50  0001 C CNN
+F 3 "" H 8300 3350 50  0000 C CNN
+	1    8300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C10
+U 1 1 581AE20E
+P 8650 3350
+F 0 "C10" V 8700 3400 50  0000 L CNN
+F 1 "1uF" V 8500 3250 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 8688 3200 50  0001 C CNN
+F 3 "" H 8650 3350 50  0000 C CNN
+	1    8650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NPN_ECB Q2
+U 1 1 581AE890
+P 9100 3350
+F 0 "Q2" H 9400 3400 50  0000 R CNN
+F 1 "KSC1518" H 9100 3500 50  0000 R CNN
+F 2 "CustomFootprints:TO-92_Inline_Wide_Oval" H 9300 3450 50  0001 C CNN
+F 3 "" H 9100 3350 50  0000 C CNN
+	1    9100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 581AEA7C
+P 8850 3650
+F 0 "R14" H 9000 3650 50  0000 C CNN
+F 1 "510k" V 8850 3650 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 8780 3650 50  0001 C CNN
+F 3 "" H 8850 3650 50  0000 C CNN
+	1    8850 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R15
+U 1 1 581AEC2A
+P 9200 3800
+F 0 "R15" H 9350 3750 50  0000 C CNN
+F 1 "10k" V 9200 3800 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 9130 3800 50  0001 C CNN
+F 3 "" H 9200 3800 50  0000 C CNN
+	1    9200 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R16
+U 1 1 581AED33
+P 9450 3600
+F 0 "R16" V 9530 3600 50  0000 C CNN
+F 1 "100" V 9450 3600 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 9380 3600 50  0001 C CNN
+F 3 "" H 9450 3600 50  0000 C CNN
+	1    9450 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 5200 2300 4850
+Connection ~ 2300 4850
+Wire Wire Line
+	2600 4850 2600 5200
+Connection ~ 2600 4850
+Wire Wire Line
+	3000 4850 3000 4950
+Connection ~ 3000 4850
+Wire Wire Line
+	3000 5250 3000 5500
+Wire Wire Line
+	1850 5100 1850 6000
+Wire Wire Line
+	1850 5900 3350 5900
+Wire Wire Line
+	3000 5900 3000 5800
+Wire Wire Line
+	3350 5900 3350 5750
+Connection ~ 3000 5900
+Wire Wire Line
+	3000 5350 3700 5350
+Connection ~ 3000 5350
+Connection ~ 3350 5350
+Wire Wire Line
+	2300 5500 2300 5900
+Connection ~ 2300 5900
+Wire Wire Line
+	2600 5500 2600 5900
+Connection ~ 2600 5900
+Connection ~ 1850 5900
+Wire Wire Line
+	1200 2900 1400 2900
+Wire Wire Line
+	1700 2900 1850 2900
+Wire Wire Line
+	2650 3100 2650 3200
+Wire Wire Line
+	2650 2500 2650 2700
+Wire Wire Line
+	1200 3150 1350 3150
+Wire Wire Line
+	1350 3150 1350 3700
+Wire Wire Line
+	2650 3500 2650 3700
+Wire Wire Line
+	2650 3150 2800 3150
+Connection ~ 2650 3150
+Wire Wire Line
+	3100 3150 3850 3150
+Wire Wire Line
+	3250 3150 3250 3200
+Wire Wire Line
+	3250 3500 3250 3700
+Connection ~ 3250 3150
+Wire Wire Line
+	4750 3000 5000 3000
+Wire Wire Line
+	4850 1150 4850 3000
+Wire Wire Line
+	4850 2450 4550 2450
+Wire Wire Line
+	4550 2150 4850 2150
+Connection ~ 4850 2450
+Wire Wire Line
+	4550 1900 4850 1900
+Connection ~ 4850 2150
+Wire Wire Line
+	4450 1450 4850 1450
+Connection ~ 4850 1900
+Wire Wire Line
+	4300 1300 4300 1150
+Wire Wire Line
+	4300 1150 4850 1150
+Connection ~ 4850 1450
+Wire Wire Line
+	4150 1450 4000 1450
+Wire Wire Line
+	4000 1450 4000 1500
+Wire Wire Line
+	4000 1800 4000 2450
+Wire Wire Line
+	3850 1900 4250 1900
+Connection ~ 4000 1900
+Wire Wire Line
+	3450 2050 3450 1900
+Wire Wire Line
+	3450 1900 3550 1900
+Wire Wire Line
+	4000 2150 4250 2150
+Wire Wire Line
+	3750 2450 4250 2450
+Connection ~ 4000 2150
+Wire Wire Line
+	3850 2850 3750 2850
+Wire Wire Line
+	3750 2850 3750 2450
+Connection ~ 4000 2450
+Connection ~ 4850 3000
+Wire Wire Line
+	5300 3000 6500 3000
+Connection ~ 5450 3000
+Connection ~ 5650 3000
+Wire Wire Line
+	5850 3000 5850 3600
+Wire Wire Line
+	5850 3600 5950 3600
+Connection ~ 5850 3000
+Connection ~ 6400 3600
+Wire Wire Line
+	6100 4600 6100 4850
+Wire Wire Line
+	6100 4300 6100 4200
+Wire Wire Line
+	7400 3150 7550 3150
+Wire Wire Line
+	7500 3150 7500 3600
+Wire Wire Line
+	7500 3600 6800 3600
+Wire Wire Line
+	6250 3600 6500 3600
+Wire Wire Line
+	6500 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 3600
+Wire Wire Line
+	6100 3750 6100 3900
+Connection ~ 7500 3150
+Wire Wire Line
+	7850 3150 7950 3150
+Wire Wire Line
+	8250 3150 8300 3150
+Wire Wire Line
+	8300 3150 8300 3200
+Wire Wire Line
+	8450 3350 8500 3350
+Wire Wire Line
+	8800 3350 8900 3350
+Wire Wire Line
+	8850 3500 8850 3350
+Connection ~ 8850 3350
+Wire Wire Line
+	9200 3550 9200 3650
+$Comp
+L GNDREF #PWR07
+U 1 1 581B117F
+P 9200 4150
+F 0 "#PWR07" H 9200 3900 50  0001 C CNN
+F 1 "GNDREF" H 9200 4000 50  0000 C CNN
+F 2 "" H 9200 4150 50  0000 C CNN
+F 3 "" H 9200 4150 50  0000 C CNN
+	1    9200 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3950 9200 4150
+Wire Wire Line
+	9300 3600 9200 3600
+Connection ~ 9200 3600
+$Comp
+L CP C11
+U 1 1 581B16EF
+P 9850 3600
+F 0 "C11" H 9875 3700 50  0000 L CNN
+F 1 "10uF" H 9875 3500 50  0000 L CNN
+F 2 "CustomFootprints:Capacitor1" H 9888 3450 50  0001 C CNN
+F 3 "" H 9850 3600 50  0000 C CNN
+	1    9850 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R17
+U 1 1 581B1A0C
+P 10100 3800
+F 0 "R17" H 10200 3800 50  0000 C CNN
+F 1 "10k" V 10100 3800 50  0000 C CNN
+F 2 "CustomFootprints:Resistor2" V 10030 3800 50  0001 C CNN
+F 3 "" H 10100 3800 50  0000 C CNN
+	1    10100 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9600 3600 9700 3600
+Wire Wire Line
+	10000 3600 10500 3600
+Wire Wire Line
+	10100 3650 10100 3600
+Connection ~ 10100 3600
+$Comp
+L GNDREF #PWR08
+U 1 1 581B1EAF
+P 10100 4100
+F 0 "#PWR08" H 10100 3850 50  0001 C CNN
+F 1 "GNDREF" H 10100 3950 50  0000 C CNN
+F 2 "" H 10100 4100 50  0000 C CNN
+F 3 "" H 10100 4100 50  0000 C CNN
+	1    10100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR09
+U 1 1 581B1F35
+P 10400 4100
+F 0 "#PWR09" H 10400 3850 50  0001 C CNN
+F 1 "GNDREF" H 10400 3950 50  0000 C CNN
+F 2 "" H 10400 4100 50  0000 C CNN
+F 3 "" H 10400 4100 50  0000 C CNN
+	1    10400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3850 10400 3850
+Wire Wire Line
+	10400 3850 10400 4100
+Wire Wire Line
+	10100 3950 10100 4100
+$Comp
+L +9V #PWR010
+U 1 1 581B3F44
+P 9200 2950
+F 0 "#PWR010" H 9200 2800 50  0001 C CNN
+F 1 "+9V" H 9200 3090 50  0000 C CNN
+F 2 "" H 9200 2950 50  0000 C CNN
+F 3 "" H 9200 2950 50  0000 C CNN
+	1    9200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2950 9200 3150
+$Comp
+L GNDREF #PWR011
+U 1 1 581B438C
+P 4300 3550
+F 0 "#PWR011" H 4300 3300 50  0001 C CNN
+F 1 "GNDREF" H 4300 3400 50  0000 C CNN
+F 2 "" H 4300 3550 50  0000 C CNN
+F 3 "" H 4300 3550 50  0000 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3800 8850 4150
+Wire Wire Line
+	8300 4150 8300 3500
+Wire Wire Line
+	5650 3150 5650 3000
+Wire Wire Line
+	5650 3450 5650 4000
+Text Label 3700 5350 0    60   ~ 0
+4v5
+Text Label 3350 5900 0    60   ~ 0
+GND
+Wire Wire Line
+	2150 2900 2350 2900
+Wire Wire Line
+	2250 3200 2250 2900
+Connection ~ 2250 2900
+Wire Wire Line
+	2250 3500 2250 3700
+Connection ~ 3300 4850
+Wire Wire Line
+	3350 5450 3350 5350
+Wire Wire Line
+	3450 2350 3450 2450
+Text Label 2250 3700 0    60   ~ 0
+4v5
+Text Label 3250 3700 0    60   ~ 0
+4v5
+Text Label 3450 2450 0    60   ~ 0
+4v5
+Text Label 5650 4000 0    60   ~ 0
+4v5
+Text Label 8300 4150 0    60   ~ 0
+4v5
+Text Label 8850 4150 0    60   ~ 0
+4v5
+Wire Wire Line
+	5450 3550 5450 4050
+Wire Wire Line
+	5450 3250 5450 3000
+Wire Wire Line
+	1850 4850 3700 4850
+Text Label 3700 4850 0    60   ~ 0
++9V
+$Comp
+L +9V #PWR012
+U 1 1 581BF468
+P 3700 4850
+F 0 "#PWR012" H 3700 4700 50  0001 C CNN
+F 1 "+9V" H 3700 4990 50  0000 C CNN
+F 2 "" H 3700 4850 50  0000 C CNN
+F 3 "" H 3700 4850 50  0000 C CNN
+	1    3700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR013
+U 1 1 581C1534
+P 7250 2650
+F 0 "#PWR013" H 7250 2400 50  0001 C CNN
+F 1 "GNDREF" H 7250 2500 50  0000 C CNN
+F 2 "" H 7250 2650 50  0000 C CNN
+F 3 "" H 7250 2650 50  0000 C CNN
+	1    7250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2800 6950 2500
+Wire Wire Line
+	6950 2500 7250 2500
+Wire Wire Line
+	7250 2500 7250 2650
+$Comp
+L +9V #PWR014
+U 1 1 581C1718
+P 6950 3850
+F 0 "#PWR014" H 6950 3700 50  0001 C CNN
+F 1 "+9V" H 6950 3990 50  0000 C CNN
+F 2 "" H 6950 3850 50  0000 C CNN
+F 3 "" H 6950 3850 50  0000 C CNN
+	1    6950 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 3500 6950 3850
+$EndSCHEMATC
